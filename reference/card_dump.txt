@@ -1,0 +1,932 @@
+﻿================================================================================
+Card Dumper - UniqueIDScriptable Objects Dump
+Generated: 2025-12-21 16:07:49
+Total objects: 2866
+Matching objects: 22
+Keywords: Plane, Crash, WhiteWash, StitchedHide, Floor, Wall, Shelter, House
+================================================================================
+
+------------------------------------------------------------
+Name: Bp_RaftShelter
+UniqueID: ccb7b0aee9b4e8e4393af50f74aed4d9
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Raft Shelter
+CardName.LocalizationKey: Bp_RaftShelter_CardName
+EnvironmentImprovements: (none)
+BlueprintCardConditions (1):
+  - TriggerCard: Shelter, Inverted: True
+
+------------------------------------------------------------
+Name: Bp_Shelter
+UniqueID: 1d4ce488ac2e4774c982cec382294d2b
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Shelter
+CardName.LocalizationKey: Bp_Shelter_CardName
+EnvironmentImprovements: (none)
+BlueprintCardConditions (1):
+  - TriggerCard: Shelter, Inverted: True
+
+------------------------------------------------------------
+Name: Env_CrashedPlane
+UniqueID: 45c1bd4537ab3844998a8574e03f8472
+Type: CardData
+CardType: Environment
+CardName.DefaultText: Crashed Plane
+CardName.LocalizationKey: Env_CrashedPlane_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Jungle
+
+------------------------------------------------------------
+Name: Event_PlaneCrashFound
+UniqueID: 731eeb1b54f256d4daa4e48b96b0cc99
+Type: CardData
+CardType: Event
+CardName.DefaultText: Plane Crash
+CardName.LocalizationKey: Event_PlaneCrashFound_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Event_PlaneRescue
+UniqueID: a0f225293f9f51a4784654a63073dc8d
+Type: CardData
+CardType: Event
+CardName.DefaultText: Plane Rescue
+CardName.LocalizationKey: Event_PlaneRescue_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: FirstAidKitPlane
+UniqueID: fd287577122a44840a4a32e0e63c99e4
+Type: CardData
+CardType: Item
+CardName.DefaultText: First Aid Kit
+CardName.LocalizationKey: FirstAidKitPlane_CardName
+EnvironmentImprovements: (none)
+CardTags: 
+
+------------------------------------------------------------
+Name: Imp_RaftStitchedHideFloor
+UniqueID: 2f3aa7f87e6c22445bff8599f6019b09
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Stitched-Hide Floor
+CardName.LocalizationKey: Imp_RaftStitchedHideFloor_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_StitchedHideFloor
+UniqueID: 2afb6d1f2179a9742b38a4cb30d58e2d
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Stitched-Hide Floor
+CardName.LocalizationKey: Imp_StitchedHideFloor_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_WhiteWashedWalls
+UniqueID: 359709c0f50d26a4fb50e82e26cdf57c
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: White Washed Walls
+CardName.LocalizationKey: Imp_WhiteWashedWalls_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Obj_Shelter
+UniqueID: f5919ef896fba384ba60cfc218d7a7a5
+Type: Objective
+
+------------------------------------------------------------
+Name: Obj3_MakeShelter
+UniqueID: c6f19a1eccd810e41aa1fd9d3040ee46
+Type: Objective
+
+------------------------------------------------------------
+Name: ObjF3_CleanHouse
+UniqueID: 9cb6699bcabe16c45a4d77772e5d812c
+Type: Objective
+
+------------------------------------------------------------
+Name: Pk_1_PlaneCrash
+UniqueID: 336b5c08bab314643985a872b39ce6d6
+Type: CharacterPerk
+
+------------------------------------------------------------
+Name: PlaneCrash
+UniqueID: d20527131ef12624da48a0fd0e52cb11
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Plane Crash
+CardName.LocalizationKey: PlaneCrash_CardName
+EnvironmentImprovements (3):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+  - Imp_MudHutExpansion (ID: 50820c24755986647a5fdc1ac29c2195)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: PlaneCrashEntrance
+UniqueID: 9b82fbaf29217e64b921d964dabd55a9
+Type: CardData
+CardType: Location
+CardName.DefaultText: Plane Crash
+
+CardName.LocalizationKey: PlaneCrashEntrance_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: PlaneCrashExit
+UniqueID: f6abfdb99d81cd14d8177280c9e7baa1
+Type: CardData
+CardType: Location
+CardName.DefaultText: Exit
+CardName.LocalizationKey: PlaneCrashExit_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: PlaneStorage
+UniqueID: 06755f47d8804144dab5f101c5d8727d
+Type: CardData
+CardType: Location
+CardName.DefaultText: Storage Compartments
+CardName.LocalizationKey: PlaneStorage_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: RaftShelter
+UniqueID: e92c73f20f64b394e8d5619abd8fb3ee
+Type: CardData
+CardType: Location
+CardName.DefaultText: Raft Shelter
+CardName.LocalizationKey: RaftShelter_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Shelter
+UniqueID: 046ac1678aa82594c9817e57122ee900
+Type: CardData
+CardType: Location
+CardName.DefaultText: Shelter
+CardName.LocalizationKey: Shelter_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Sheltered
+UniqueID: e2031c58efb4cb84fa95a3a813513dae
+Type: GameStat
+
+------------------------------------------------------------
+Name: ShelteredLeafBed
+UniqueID: 5afd12f21090ba748adac85deeae91f4
+Type: CardData
+CardType: Location
+CardName.DefaultText: Sheltered Leaf Bed
+CardName.LocalizationKey: ShelteredLeafBed_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: WallScratchings
+UniqueID: 06f4898505a4cc14f8666ef7f10392e0
+Type: CardData
+CardType: Location
+CardName.DefaultText: Wall Scratchings
+CardName.LocalizationKey: WallScratchings_CardName
+EnvironmentImprovements: (none)
+
+
+================================================================================
+ALL EnvImprovement Cards
+================================================================================
+
+------------------------------------------------------------
+Name: Imp_Door
+UniqueID: ac4f41052ca83ab43961f21270259714
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Door
+CardName.LocalizationKey: Imp_Door_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_HomeSign
+UniqueID: 5818fb8dde656774dac9edaa52d5c0a0
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Home Sign
+CardName.LocalizationKey: Imp_HomeSign_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_Irrigation
+UniqueID: ac19811fba432c54389ed288b92f60a4
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Irrigation System
+CardName.LocalizationKey: Imp_Irrigation_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_MudHutExpansion
+UniqueID: 50820c24755986647a5fdc1ac29c2195
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Mud Hut Expansion
+CardName.LocalizationKey: Imp_MudHutExpansion_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_Path
+UniqueID: a2983ba6b8707c745a38d6fd9bf4f37a
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Path
+CardName.LocalizationKey: Imp_Path_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_RaftExpansion1
+UniqueID: c2f8c244b736f3d498223802110c763c
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Raft Expansion
+CardName.LocalizationKey: Imp_RaftExpansion1_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_RaftExpansion2
+UniqueID: 133e084630fd67945ab93c7403fa1ce4
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Raft Expansion
+CardName.LocalizationKey: Imp_RaftExpansion2_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_RaftStitchedHideFloor
+UniqueID: 2f3aa7f87e6c22445bff8599f6019b09
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Stitched-Hide Floor
+CardName.LocalizationKey: Imp_RaftStitchedHideFloor_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_SeaTrophy
+UniqueID: ea55e9284fef6944eb0d202080fd557b
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Sea Trophy
+CardName.LocalizationKey: Imp_SeaTrophy_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_ShedExpansion
+UniqueID: cfbf065921a755342bc1a5d668822c57
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Shed Expansion
+CardName.LocalizationKey: Imp_ShedExpansion_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_StitchedHideFloor
+UniqueID: 2afb6d1f2179a9742b38a4cb30d58e2d
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Stitched-Hide Floor
+CardName.LocalizationKey: Imp_StitchedHideFloor_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_StoneHutExpansion
+UniqueID: caaacab14c1d21046bb233ef3c4697bc
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Stone Hut Expansion
+CardName.LocalizationKey: Imp_StoneHutExpansion_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_TrappingFences
+UniqueID: 2b8c17e66c746894ea9469de4f36f5c9
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Trapping Fences
+CardName.LocalizationKey: Imp_TrappingFences_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_WhiteWashedWalls
+UniqueID: 359709c0f50d26a4fb50e82e26cdf57c
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: White Washed Walls
+CardName.LocalizationKey: Imp_WhiteWashedWalls_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_WindcatcherMudHut
+UniqueID: 7934c7f6f949ffa44ab9641a404cc12e
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Windcatcher
+CardName.LocalizationKey: Imp_WindTowerMudHut_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Imp_WindcatcherStoneHut
+UniqueID: e015ff56b18a2ae468b61cd6c33324d8
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Windcatcher
+CardName.LocalizationKey: Imp_WindTowerStoneHut_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: TestImprovement1
+UniqueID: 1de680edf9cdf8f4da3443fcad7025be
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Improvement!
+CardName.LocalizationKey: TestImprovement1_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: TestImprovement2
+UniqueID: 84e2a828a86fd5b47b74d72de51733d7
+Type: CardData
+CardType: EnvImprovement
+CardName.DefaultText: Other Improvement!
+CardName.LocalizationKey: TestImprovement2_CardName
+EnvironmentImprovements: (none)
+
+
+================================================================================
+ALL Explorable Cards
+================================================================================
+
+------------------------------------------------------------
+Name: AcidLake
+UniqueID: f836eea7cd419e24d91836ea89e7ef2d
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Acid Lake
+CardName.LocalizationKey: AcidLake_CardName
+EnvironmentImprovements (1):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: Atoll
+UniqueID: 1195ed417bafddb4e91d8c4fc27e1cdd
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Atoll
+CardName.LocalizationKey: Atoll_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bay
+UniqueID: c53cb180a9445ba44bcc72055f0211de
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Bay
+CardName.LocalizationKey: Bay_CardName
+EnvironmentImprovements (1):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+
+------------------------------------------------------------
+Name: Beach
+UniqueID: 2af97d8f63c285b44a5a8981e19ad812
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Beach
+CardName.LocalizationKey: Beach_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: BirdRock
+UniqueID: 75150bd7b13448e4c99d94dfe64e5fa3
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Bird Rock
+CardName.LocalizationKey: BirdRock_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: CaveBats
+UniqueID: 5a9d9215680d1084d90f5d811d594739
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Bat Cave
+CardName.LocalizationKey: CaveBats_CardName
+EnvironmentImprovements (5):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: CaveGrasslands
+UniqueID: ef5e474f345aeb443a6df6d4b3c71888
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Grasslands Cave
+CardName.LocalizationKey: CaveGrasslands_CardName
+EnvironmentImprovements (5):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: CaveSea
+UniqueID: bb76ed54cf44005418987d582ac9b177
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Sea Cave
+CardName.LocalizationKey: CaveSea_CardName
+EnvironmentImprovements (5):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: CaveTidal
+UniqueID: a061fa03009394c4dbe64fdce46f881b
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Tidal Cave
+CardName.LocalizationKey: CaveTidal_CardName
+EnvironmentImprovements (4):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: Cellar
+UniqueID: ec29d82fd58ffde4190dc62d253f35c4
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Cellar
+CardName.LocalizationKey: Cellar_CardName
+EnvironmentImprovements (5):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: Cove
+UniqueID: 3516aed2577f7d940a499c5b0fb67dd0
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Secret Cove
+CardName.LocalizationKey: Cove_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: CrystalChamber
+UniqueID: 5b04c713b00040e48b985c4a1fb2422d
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Crystal Chamber
+CardName.LocalizationKey: CrystalChamber_CardName
+EnvironmentImprovements (4):
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: DampChamber
+UniqueID: e5e21bd032a613146b5f054394e9d652
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Damp Chamber
+CardName.LocalizationKey: DampChamber_CardName
+EnvironmentImprovements (4):
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: DarkCave
+UniqueID: 363b143a850318f4489acfb1f3731cda
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Dark Cave
+CardName.LocalizationKey: DarkCave_CardName
+EnvironmentImprovements (5):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: DarkChamber
+UniqueID: a21f1df2ec1bb664a867baa178f61c10
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Darkness
+CardName.LocalizationKey: DarkChamber_CardName
+EnvironmentImprovements (4):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: DeepJungle
+UniqueID: 924f7c5aae636574cb2cfc65a0826b92
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Deep Jungle
+CardName.LocalizationKey: DeepJungle_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: DesolateBeach
+UniqueID: ece9ea7975f090f43ac506132f4b6ef0
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Desolate Beach
+CardName.LocalizationKey: DesolateBeach_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Enclosure
+UniqueID: 066ad822f09706e4087e2c1af6b50d26
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Enclosure
+CardName.LocalizationKey: Enclosure_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: FloodedChamber
+UniqueID: 55bfb247587aa9149a3fba182e4c29c3
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Flooded Chamber
+CardName.LocalizationKey: FloodedChamber_CardName
+EnvironmentImprovements (4):
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: GrasslandsE
+UniqueID: 069b4c17f9d7634479e1bde8c256f89a
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Eastern Grasslands
+CardName.LocalizationKey: GrasslandsE_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: GrasslandsW
+UniqueID: e28afc8d99d67fd41880321f6119b81f
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Western Grasslands
+CardName.LocalizationKey: GrasslandsW_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: HighChamber
+UniqueID: 15679898689f639409395bda67169ca7
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: High Chamber
+CardName.LocalizationKey: HighChamber_CardName
+EnvironmentImprovements (4):
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: HighlandHole
+UniqueID: f71be02d48a8c014987201bb834f4f13
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Highland Hole
+CardName.LocalizationKey: HighlandHole_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: HighlandsEastern
+UniqueID: e7c234bd26d1b27488fc767acc7c8121
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Eastern Highlands
+CardName.LocalizationKey: HighlandsEastern_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: HighlandsWestern
+UniqueID: 1081f3e92e9e7bc4fb16676b79657193
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Western Highlands
+CardName.LocalizationKey: HighlandsWestern_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: Jungle
+UniqueID: 14824840d8faf6f45914198fc66c70f5
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Jungle
+CardName.LocalizationKey: Jungle_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: JungleHighlands
+UniqueID: 71f97456ed78fd543938ec881908f2e0
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Jungle Highlands
+CardName.LocalizationKey: JungleHighlands_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: LowChamber
+UniqueID: aab49e918858ff94ba9290b9059ab808
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Low Chamber
+CardName.LocalizationKey: LowChamber_CardName
+EnvironmentImprovements (4):
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: MacaqueDen
+UniqueID: b49cc2ba44996d944ae8989707b57575
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Macaque Den
+CardName.LocalizationKey: MacaqueDen_CardName
+EnvironmentImprovements (5):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: Mangroves
+UniqueID: d6251baa92dd598478a8ed87cf20e4cf
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Mangrove Forest
+CardName.LocalizationKey: Mangroves_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: MidChamber
+UniqueID: 1b0c7098503d1c644a873d824816c507
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Medium Chamber
+CardName.LocalizationKey: MidChamber_CardName
+EnvironmentImprovements (4):
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: MudHut
+UniqueID: e6c0302a6f406ca41a376c1ff73ab8bf
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Mud Hut
+CardName.LocalizationKey: MudHut_CardName
+EnvironmentImprovements (7):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_MudHutExpansion (ID: 50820c24755986647a5fdc1ac29c2195)
+  - Imp_WindcatcherMudHut (ID: 7934c7f6f949ffa44ab9641a404cc12e)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: MudHutRuins
+UniqueID: 66001c57d13581d418235c806087d687
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Mud Hut
+CardName.LocalizationKey: MudHutRuins_CardName
+EnvironmentImprovements (7):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_MudHutExpansion (ID: 50820c24755986647a5fdc1ac29c2195)
+  - Imp_WindcatcherMudHut (ID: 7934c7f6f949ffa44ab9641a404cc12e)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: NarrowTunnel
+UniqueID: 6000dc0a7d5fb9647b855e119e32b98c
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Narrow Tunnel
+CardName.LocalizationKey: NarrowTunnel_CardName
+EnvironmentImprovements (4):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: Outskirts
+UniqueID: a4f73e1bbfd157a47a1247bfbd0cb1f3
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Jungle Outskirts
+CardName.LocalizationKey: Outskirts_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: PlaneCrash
+UniqueID: d20527131ef12624da48a0fd0e52cb11
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Plane Crash
+CardName.LocalizationKey: PlaneCrash_CardName
+EnvironmentImprovements (3):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+  - Imp_MudHutExpansion (ID: 50820c24755986647a5fdc1ac29c2195)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: Raft
+UniqueID: 3bf73e3d15ca9574593370ea9d23e306
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Raft
+CardName.LocalizationKey: Raft_CardName
+EnvironmentImprovements (3):
+  - Imp_RaftExpansion1 (ID: c2f8c244b736f3d498223802110c763c)
+  - Imp_RaftExpansion2 (ID: 133e084630fd67945ab93c7403fa1ce4)
+  - Imp_RaftStitchedHideFloor (ID: 2f3aa7f87e6c22445bff8599f6019b09)
+
+------------------------------------------------------------
+Name: Rocks
+UniqueID: 3de36c5392be8a54aab8893cbf90f8fd
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Rocks
+CardName.LocalizationKey: Rocks_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: SecretValley
+UniqueID: 2eb21fd9cfd75cd408f587c0786b1705
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Secret Valley
+CardName.LocalizationKey: SecretValley_CardName
+EnvironmentImprovements (2):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: Shed
+UniqueID: 40e6016b1943f6444af3f459706a31e6
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Shed
+CardName.LocalizationKey: Shed_CardName
+EnvironmentImprovements (4):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_ShedExpansion (ID: cfbf065921a755342bc1a5d668822c57)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: StoneHut
+UniqueID: c86b8ddd5a9eaba4198d5f8bd05f8c00
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Stone Hut
+CardName.LocalizationKey: StoneHut_CardName
+EnvironmentImprovements (7):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StoneHutExpansion (ID: caaacab14c1d21046bb233ef3c4697bc)
+  - Imp_WindcatcherStoneHut (ID: e015ff56b18a2ae468b61cd6c33324d8)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors
+
+------------------------------------------------------------
+Name: Tunnel
+UniqueID: 63d85cc6316f8be4d833b32a3b92d3b3
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Tunnel
+CardName.LocalizationKey: Tunnel_CardName
+EnvironmentImprovements (5):
+  - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_SeaTrophy (ID: ea55e9284fef6944eb0d202080fd557b)
+  - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
+CardTags: tag_EnvIndoors, tag_EnvCaveSystem
+
+------------------------------------------------------------
+Name: Volcano
+UniqueID: 4845d6e43b6ab284ca755d8b9541f032
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Volcano
+CardName.LocalizationKey: Volcano_CardName
+EnvironmentImprovements (1):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+CardTags: tag_SnareCompatible
+
+------------------------------------------------------------
+Name: Wetlands
+UniqueID: 1a46f18abae9692458e9d77ff059fa03
+Type: CardData
+CardType: Explorable
+CardName.DefaultText: Wetland Jungle
+CardName.LocalizationKey: Wetlands_CardName
+EnvironmentImprovements (3):
+  - Imp_Path (ID: a2983ba6b8707c745a38d6fd9bf4f37a)
+  - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
+  - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
+CardTags: tag_SnareCompatible
+

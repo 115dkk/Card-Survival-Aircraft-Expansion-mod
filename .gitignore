@@ -1,0 +1,12 @@
+# 디컴파일된 레퍼런스 코드 (저작권 보호)
+reference/Assembly-CSharp/**/*.cs
+reference/ModCore/**/*.cs
+
+# 빌드 결과물
+bin/
+obj/
+*.dll
+
+# IDE 설정
+.vs/
+*.user

@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>CardDumper</AssemblyName>
+    <RootNamespace>CardDumper</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <!-- 게임 경로 설정 (절대 경로) -->
+  <PropertyGroup>
+    <GamePath>C:\Program Files (x86)\Steam\steamapps\common\Card Survival Tropical Island</GamePath>
+    <BepInExPath>$(GamePath)\BepInEx</BepInExPath>
+    <ManagedPath>$(GamePath)\Card Survival - Tropical Island_Data\Managed</ManagedPath>
+    <ModCorePath>$(BepInExPath)\plugins\Pikachu-模组核心-ModCore</ModCorePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BepInEx 참조 -->
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExPath)\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExPath)\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- ModCore 참조 -->
+    <Reference Include="ModCore">
+      <HintPath>$(ModCorePath)\ModCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Unity 및 게임 어셈블리 참조 -->
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedPath)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedPath)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedPath)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 빌드 후 플러그인 폴더로 복사 -->
+  <Target Name="CopyToPlugins" AfterTargets="Build" Condition="Exists('$(BepInExPath)')">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(BepInExPath)\plugins\$(AssemblyName)" />
+  </Target>
+
+</Project>
