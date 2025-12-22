@@ -173,4 +173,3 @@ MIT License - 자세한 내용은 [LICENSE.md](LICENSE.md)를 참조하세요.
 
 - [BepInEx Documentation](https://docs.bepinex.dev/)
 - [Harmony Wiki](https://harmony.pardeike.net/)
-- [ModCore GitHub](https://github.com/pika-pikachu/ModCore) (비공식)
