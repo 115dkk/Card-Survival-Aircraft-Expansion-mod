@@ -1,21 +1,25 @@
 # Card Survival: Tropical Island - Aircraft Expansion Mod
 
 ## 프로젝트 개요
+
 관광객 캐릭터의 비행기 거처에 공간 확장 기능을 추가하고, 기존에 막혀있던 흰 벽/가죽 바닥 업그레이드를 비행기에서도 사용 가능하게 하는 모드.
 게임 설정상 비행기가 절벽 옆에 박혀 있어, 한쪽 벽을 부수고 흙을 파서 거주 공간을 넓히는 컨셉.
 
 ## 기술 스택
+
 - Unity 게임 (C#)
 - BepInEx 5.x 모딩 프레임워크
 - Harmony 2.x 패칭 라이브러리
 - ModCore API (reference/ModCore 참조)
 
 ## 디렉토리 구조
+
 - `reference/Assembly-CSharp/` - 게임 본체 디컴파일 소스 (읽기 전용)
 - `reference/ModCore/` - 모딩 API 디컴파일 소스 (읽기 전용)
 - `src/AircraftExpansion/` - 모드 소스 코드
 
 ## 핵심 참조 파일
+
 - `reference/ModCore/ModCore.Data/Loader.cs` - 데이터 로딩 API
 - `reference/ModCore/ModCore.Data/DataMap.cs` - CardData 매핑
 - `reference/ModCore/ModCore.Patcher/` - Harmony 패치 예제
@@ -61,6 +65,7 @@
 - 공간 확장 완료와 무관하게 독립적으로 적용 가능
 
 ## 게임 메커니즘 참고
+
 - 1 TP = 15분 게임 내 시간
 - 집 업그레이드는 Stage 기반으로 작동
 - 각 Stage는 시간, 도구, 재료 소모
@@ -68,6 +73,7 @@
 - 비행기는 현재 흰 벽/가죽 바닥 업그레이드가 막혀있음 (이 모드의 해제 대상)
 
 ## 코딩 컨벤션
+
 - 네임스페이스: AircraftExpansion
 - Harmony 패치: src/AircraftExpansion/Patches/
 - 데이터 정의: src/AircraftExpansion/Data/
