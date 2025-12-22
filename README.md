@@ -16,7 +16,7 @@ Card Survival: Tropical Island 게임의 관광객 캐릭터용 비행기 거처
 - [x] ModCore Loader 이벤트 연동
 - [x] 비행기에 흰 벽 업그레이드 추가
 - [x] 비행기에 가죽 바닥 업그레이드 추가
-- [x] 카드 덤프 디버깅 도구 (CardDumper)
+- [x] 카드 덤프 도구 (CardDumper)
 
 ### 예정
 
@@ -161,9 +161,9 @@ Steam에서 게임을 실행합니다.
 2. 비행기 내부로 이동
 3. 업그레이드 메뉴에서 "백색 벽"과 "가죽 장식 바닥" 옵션 확인
 
-### 4. 카드 덤프 (디버깅)
+### 4. 카드 덤프
 
-CardDumper 플러그인이 설치되어 있으면 게임 로드 후 `BepInEx/dumps/card_dump.txt`에 카드 정보가 저장됩니다.
+CardDumper 플러그인이 설치되어 있으면 게임 로드 후 `BepInEx/dumps/card_dump.txt`에 카드 정보가 저장됩니다. 이는 UUID가 게임 속에 저장되어 있지 않으므로, 자동화된 방법으로 UUID를 수집하는 툴을 만든 것입니다.
 
 ## 라이선스
 
