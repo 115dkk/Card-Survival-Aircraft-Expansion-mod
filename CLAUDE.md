@@ -413,24 +413,3 @@ src/AircraftExpansion/GameSourceModify/
 2. 흰 벽의 `BlueprintCardConditions` 또는 `BlueprintTagConditions`에 해당 조건 추가
 
 이는 별도의 Harmony 패치나 조건부 로직으로 구현 가능
-
-## 검증된 UniqueID 목록
-
-### 수정 대상
-| 카드명 | UniqueID | 현재 상태 |
-|--------|----------|-----------|
-| PlaneCrash | d20527131ef12624da48a0fd0e52cb11 | EnvironmentImprovements에 흰 벽/가죽 바닥 누락 |
-
-### 추가할 업그레이드
-| 업그레이드명 | UniqueID |
-|--------------|----------|
-| Imp_WhiteWashedWalls | 359709c0f50d26a4fb50e82e26cdf57c |
-| Imp_StitchedHideFloor | 2afb6d1f2179a9742b38a4cb30d58e2d |
-
-### 참고: 비행기에 이미 있는 업그레이드
-| 업그레이드명 | UniqueID |
-|--------------|----------|
-| Imp_Door | ac4f41052ca83ab43961f21270259714 |
-| Imp_HomeSign | 5818fb8dde656774dac9edaa52d5c0a0 |
-| Imp_MudHutExpansion | 50820c24755986647a5fdc1ac29c2195 |
-```
