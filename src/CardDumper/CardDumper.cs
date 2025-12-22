@@ -20,10 +20,40 @@ public class CardDumper : BaseUnityPlugin
 
     public static ManualLogSource Log { get; private set; }
 
+    // 기존 검색 키워드 (비행기/집 관련)
     private static readonly string[] SearchKeywords =
     {
         "Plane", "Crash", "WhiteWash", "StitchedHide",
         "Floor", "Wall", "Shelter", "House"
+    };
+
+    // 확장 단계에 필요한 아이템 키워드 (CLAUDE.md 참고)
+    // Stage 1: 도끼, 고철 | Stage 2-5: 삽, 마른 흙
+    // Stage 6-7: 긴 막대기, 섬유 끈 | Stage 8: 점토, 섬유
+    // Stage 9: 생석회, 물(용기에 담긴)
+    private static readonly string[] ExpansionItemKeywords =
+    {
+        // 도구
+        "Axe",          // 도끼 (AxeStone, AxeFlint, AxeCopper, AxeScrap)
+        "Shovel",       // 삽 (ShovelCopper, ShovelScrap, ShovelWooden)
+
+        // 재료
+        "MetalScrap",   // 고철 조각
+        "DirtPile",     // 마른 흙
+        "StickLong",    // 긴 막대기
+        "Fiber",        // 섬유, 섬유 끈 (Fibers, CordFiber)
+        "Cord",         // 끈 (CordFiber, CordPlant 등)
+        "Clay",         // 점토 (ClayBowl 제외를 위해 정확히 매칭)
+        "Quicklime",    // 생석회
+
+        // Stage 9 물 용기 (LiquidContentCondition용)
+        "CoconutShell", // 코코넛 껍데기
+        "ClayBowl",     // 점토 그릇
+        "PlasticBottle",// 플라스틱 병
+
+        // Stage 9 액체 타입
+        "LQ_Water",     // 물 (깨끗한 물)
+        "LQ_WaterUnsafe"// 오염된 물
     };
 
     private void Awake()
@@ -119,6 +149,28 @@ public class CardDumper : BaseUnityPlugin
             DumpObject(sb, card);
         }
 
+        // Dump expansion stage items (도구 및 재료)
+        sb.AppendLine();
+        sb.AppendLine("=".PadRight(80, '='));
+        sb.AppendLine("EXPANSION STAGE ITEMS (도구 및 재료)");
+        sb.AppendLine($"Keywords: {string.Join(", ", ExpansionItemKeywords)}");
+        sb.AppendLine("=".PadRight(80, '='));
+        sb.AppendLine();
+
+        var expansionItems = allObjects.Values
+            .OfType<CardData>()
+            .Where(c => c != null && MatchesExpansionKeyword(c.name))
+            .OrderBy(c => c.CardType.ToString())
+            .ThenBy(c => c.name)
+            .ToList();
+
+        Log.LogInfo($"Expansion item matches: {expansionItems.Count}");
+
+        foreach (var card in expansionItems)
+        {
+            DumpObject(sb, card);
+        }
+
         // Write to file
         var dumpPath = Path.Combine(Paths.BepInExRootPath, "dumps");
         Directory.CreateDirectory(dumpPath);
@@ -132,6 +184,13 @@ public class CardDumper : BaseUnityPlugin
     {
         if (string.IsNullOrEmpty(name)) return false;
         return SearchKeywords.Any(kw =>
+            name.IndexOf(kw, StringComparison.OrdinalIgnoreCase) >= 0);
+    }
+
+    private static bool MatchesExpansionKeyword(string name)
+    {
+        if (string.IsNullOrEmpty(name)) return false;
+        return ExpansionItemKeywords.Any(kw =>
             name.IndexOf(kw, StringComparison.OrdinalIgnoreCase) >= 0);
     }
 

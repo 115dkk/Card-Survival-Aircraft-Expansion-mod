@@ -48,7 +48,7 @@
 
 #### Stage 9 (확장된 방의 추가 개선으로 존재): 벽면 마감
 - 소요: 4 TP (1시간)
-- 필요: 생석회 4개, 물
+- 필요: 생석회 4개, 물(0.8그릇 이상 담김, 코코넛 그릇/점토 그릇/플라스틱 병에 담긴 (깨끗한) 물/오염된 물만 허용)
 - 효과: 편안함 보너스, 흰 벽 업그레이드 전제조건
 
 ### 목표 2: 기존 집 업그레이드를 비행기에 적용
@@ -419,3 +419,75 @@ src/AircraftExpansion/GameSourceModify/
 2. 흰 벽의 `BlueprintCardConditions` 또는 `BlueprintTagConditions`에 해당 조건 추가
 
 이는 별도의 Harmony 패치나 조건부 로직으로 구현 가능
+
+---
+
+## 액체 시스템 분석
+
+### LiquidContentCondition 구조체
+
+`BlueprintElement`에서 액체 내용물 조건을 정의할 때 사용:
+
+```csharp
+public struct LiquidContentCondition
+{
+    public bool IsActive;                    // 조건 활성화 여부
+    public CardData RequiredLiquid;          // 특정 액체 카드 (단일)
+    public CardTabGroup RequiredGroup;       // 허용되는 액체 그룹
+    public Vector2 RequiredQuantity;         // x=최소량, y=최대량
+}
+```
+
+#### RequiredQuantity 해석
+
+- `x <= y`: x~y 범위 내의 양 필요
+- `x > y`: x 이상의 양 필요 (최소값만 검사)
+- `(0, 0)`: 양 무관 (AnyQuantity)
+
+### Stage 9 물 조건 구현
+
+CLAUDE.md 51행에 정의된 조건:
+
+```text
+물(0.8그릇 이상 담김, 코코넛 그릇/점토 그릇/플라스틱 병에 담긴 (깨끗한) 물/오염된 물만 허용)
+```
+
+#### 필요한 카드/그룹
+
+**용기 (CardTabGroup 필요):**
+
+| 카드명 | 로컬라이제이션 키 | 한글명 |
+| ------ | ----------------- | ------ |
+| CoconutShell | `CoconutShell` | 코코넛 껍데기 |
+| ClayBowl | `ClayBowl` | 점토 그릇 |
+| PlasticBottle | `PlasticBottle` | 플라스틱 병 |
+
+**액체 (CardTabGroup 필요):**
+
+| 카드명 | 로컬라이제이션 키 | 한글명 |
+| ------ | ----------------- | ------ |
+| LQ_Water | `LQ_Water` | 물 |
+| LQ_WaterUnsafe | `LQ_WaterUnsafe` | 안전하지 않은 물 |
+
+#### BlueprintElement 구성 예시
+
+```csharp
+new BlueprintElement {
+    RequiredTabGroup = waterContainerGroup,  // CoconutShell, ClayBowl, PlasticBottle
+    RequiredQuantity = 1,
+    RequiredLiquidContent = new LiquidContentCondition {
+        IsActive = true,
+        RequiredGroup = drinkableWaterGroup,  // LQ_Water, LQ_WaterUnsafe
+        RequiredQuantity = new Vector2(0.8f, 0f)  // 0.8 이상
+    }
+}
+```
+
+### 기타 액체 타입 참고
+
+| 카드명 | 한글명 | 용도 |
+| ------ | ------ | ---- |
+| LQ_WaterBoiling | 끓는 물 | 요리용 |
+| LQ_WaterSalt | 소금물 | 마시기 부적합 |
+| LQ_WaterToxic | 유독성 물 | 마시기 부적합 |
+| LQ_WaterRice | 쌀뜨물 | 마실 수 있음 |
