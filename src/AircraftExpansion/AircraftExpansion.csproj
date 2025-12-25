@@ -49,9 +49,28 @@
     </Reference>
   </ItemGroup>
 
+  <!-- 데이터 파일 포함 (Content로 표시) -->
+  <ItemGroup>
+    <Content Include="Data\CardData\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>CardData\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="Data\Resource\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resource\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+
   <!-- 빌드 후 플러그인 폴더로 복사 -->
   <Target Name="CopyToPlugins" AfterTargets="Build" Condition="Exists('$(BepInExPath)')">
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(BepInExPath)\plugins\$(AssemblyName)" />
+    <!-- 데이터 폴더도 복사 -->
+    <ItemGroup>
+      <DataFiles Include="$(OutputPath)CardData\**\*.*" />
+      <ResourceFiles Include="$(OutputPath)Resource\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(DataFiles)" DestinationFolder="$(BepInExPath)\plugins\$(AssemblyName)\CardData\%(RecursiveDir)" />
+    <Copy SourceFiles="@(ResourceFiles)" DestinationFolder="$(BepInExPath)\plugins\$(AssemblyName)\Resource\%(RecursiveDir)" />
   </Target>
 
 </Project>

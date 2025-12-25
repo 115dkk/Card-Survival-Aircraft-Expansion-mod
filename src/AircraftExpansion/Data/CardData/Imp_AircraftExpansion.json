@@ -1,0 +1,14 @@
+{
+  "UniqueID": "f35e8923e19646a2b5cd510be52c4563",
+  "CardName": {
+    "DefaultText": "Aircraft Expansion",
+    "LocalizationKey": "Imp_AircraftExpansion_CardName"
+  },
+  "CardDescription": {
+    "DefaultText": "Expanded living space carved into the cliff behind the crashed plane.",
+    "LocalizationKey": "Imp_AircraftExpansion_CardDescription"
+  },
+  "CardType": 10,
+  "CardImageWarpData": "Imp_AircraftExpansion",
+  "BlueprintStages": []
+}

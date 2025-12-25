@@ -51,7 +51,7 @@
 - 필요: 생석회 4개, 물(0.8그릇 이상 담김, 코코넛 그릇/점토 그릇/플라스틱 병에 담긴 (깨끗한) 물/오염된 물만 허용)
 - 효과: 편안함 보너스, 흰 벽 업그레이드 전제조건
 
-### 목표 2: 기존 집 업그레이드를 비행기에 적용
+### 목표 2: 기존 집 업그레이드를 비행기에 적용 - 완수됨
 현재 게임에서 비행기는 흰 벽 업그레이드와 가죽 바닥 업그레이드가 차단되어 있음.
 이 모드는 해당 제한을 해제하여 비행기에서도 두 업그레이드를 사용 가능하게 함.
 만일 별도의 업그레이드 스타일이고 이것이 비행기에만 누락된 경우, 원본 게임 파일을 참고하여 비행기에도 추가할 필요가 있음.
@@ -78,6 +78,51 @@
 - Harmony 패치: src/AircraftExpansion/Patches/
 - 데이터 정의: src/AircraftExpansion/Data/
 - 플러그인 진입점: src/AircraftExpansion/Plugin.cs
+
+---
+
+## 구현 상태
+
+### 비행기 공간 확장 업그레이드 (Imp_AircraftExpansion)
+
+새로 생성된 EnvImprovement 카드로, 비행기에 공간을 확장합니다.
+
+| 속성 | 값 |
+| ---- | -- |
+| 카드명 | Imp_AircraftExpansion |
+| UniqueID | `f35e8923e19646a2b5cd510be52c4563` |
+| CardType | EnvImprovement (10) |
+| JSON 경로 | `src/AircraftExpansion/Data/CardData/Imp_AircraftExpansion.json` |
+
+#### 이미지 파일 설정
+
+이미지 파일은 `src/AircraftExpansion/Data/Resource/Texture2D/` 폴더에 배치합니다:
+
+- 파일명: `Imp_AircraftExpansion.png` (또는 .jpg, .jpeg)
+- 파일명(확장자 제외)이 스프라이트 이름이 됩니다
+- JSON의 `CardImageWarpData`에서 이 이름을 참조합니다
+
+#### 런타임 동작
+
+`AircraftModifications.SetupAircraftExpansionUpgrade()` 메서드가:
+
+1. 진흙 오두막 확장(MudHutExpansion)의 인벤토리 슬롯을 복사
+2. 비행기에 이 업그레이드를 환경 개선 목록에 추가
+
+#### 빌드 및 배포
+
+```bash
+cd src/AircraftExpansion
+dotnet build --configuration Release
+```
+
+빌드 출력:
+
+- `bin/Release/net48/AircraftExpansion.dll` - 플러그인 DLL
+- `bin/Release/net48/CardData/` - 카드 데이터 JSON
+- `bin/Release/net48/Resource/Texture2D/` - 이미지 파일
+
+자동으로 `BepInEx/plugins/AircraftExpansion/` 폴더에 복사됩니다.
 
 ---
 

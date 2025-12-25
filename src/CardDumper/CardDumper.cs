@@ -260,9 +260,121 @@ public class CardDumper : BaseUnityPlugin
             {
                 sb.AppendLine($"CardTags: {string.Join(", ", card.CardTags.Where(t => t != null).Select(t => t.name))}");
             }
+
+            // InventorySlots (방 크기 관련)
+            if (card.InventorySlots != null && card.InventorySlots.Length > 0)
+            {
+                sb.AppendLine($"InventorySlots ({card.InventorySlots.Length}):");
+                foreach (var slot in card.InventorySlots)
+                {
+                    if (slot != null)
+                    {
+                        sb.AppendLine($"  - {slot.name} (ID: {slot.UniqueID})");
+                    }
+                    else
+                    {
+                        sb.AppendLine($"  - (null slot)");
+                    }
+                }
+            }
+
+            // BlueprintStages (건설 단계)
+            if (card.BlueprintStages != null && card.BlueprintStages.Length > 0)
+            {
+                sb.AppendLine($"BlueprintStages ({card.BlueprintStages.Length}):");
+                for (int i = 0; i < card.BlueprintStages.Length; i++)
+                {
+                    var stage = card.BlueprintStages[i];
+                    sb.AppendLine($"  Stage {i + 1}:");
+                    if (stage.RequiredElements != null)
+                    {
+                        foreach (var elem in stage.RequiredElements)
+                        {
+                            DumpBlueprintElement(sb, elem);
+                        }
+                    }
+                }
+            }
+
+            // PassiveEffects
+            if (card.PassiveEffects != null && card.PassiveEffects.Length > 0)
+            {
+                sb.AppendLine($"PassiveEffects ({card.PassiveEffects.Length}):");
+                foreach (var effect in card.PassiveEffects)
+                {
+                    sb.AppendLine($"  - EffectName: {effect.EffectName}");
+                    sb.AppendLine($"    WeightCapacityModifier: {effect.WeightCapacityModifier}");
+                    if (effect.StatModifiers != null && effect.StatModifiers.Length > 0)
+                    {
+                        foreach (var stat in effect.StatModifiers)
+                        {
+                            if (stat.Stat != null)
+                            {
+                                sb.AppendLine($"    StatModifier: {stat.Stat.name}, Rate: {stat.RateModifier}, Value: {stat.ValueModifier}");
+                            }
+                        }
+                    }
+                }
+            }
+
+            // RemotePassiveEffects
+            if (card.RemotePassiveEffects != null && card.RemotePassiveEffects.Length > 0)
+            {
+                sb.AppendLine($"RemotePassiveEffects ({card.RemotePassiveEffects.Length}):");
+                foreach (var remote in card.RemotePassiveEffects)
+                {
+                    if (remote.AppliesTo != null)
+                    {
+                        sb.AppendLine($"  - AppliesTo: {string.Join(", ", remote.AppliesTo.Select(a => a.Card != null ? a.Card.name : (a.Tag != null ? a.Tag.name : "null")))}");
+                    }
+                    sb.AppendLine($"    WeightCapacityModifier: {remote.Effect.WeightCapacityModifier}");
+                }
+            }
         }
 
         sb.AppendLine();
+    }
+
+    private static void DumpBlueprintElement(StringBuilder sb, BlueprintElement elem)
+    {
+        // BlueprintElement는 private 필드가 많아서 리플렉션으로 접근
+        var type = typeof(BlueprintElement);
+        var requiredCardField = type.GetField("RequiredCard", BindingFlags.NonPublic | BindingFlags.Instance);
+        var requiredTabGroupField = type.GetField("RequiredTabGroup", BindingFlags.NonPublic | BindingFlags.Instance);
+        var requiredQuantityField = type.GetField("RequiredQuantity", BindingFlags.NonPublic | BindingFlags.Instance);
+        var requiredLiquidField = type.GetField("RequiredLiquidContent", BindingFlags.NonPublic | BindingFlags.Instance);
+
+        var card = requiredCardField?.GetValue(elem) as CardData;
+        var tabGroup = requiredTabGroupField?.GetValue(elem) as CardTabGroup;
+        var quantity = requiredQuantityField != null ? (int)requiredQuantityField.GetValue(elem) : 0;
+
+        if (card != null)
+        {
+            sb.AppendLine($"      - RequiredCard: {card.name} x{elem.GetQuantity}");
+        }
+        else if (tabGroup != null)
+        {
+            sb.AppendLine($"      - RequiredTabGroup: {tabGroup.name} x{elem.GetQuantity}");
+        }
+
+        // LiquidContentCondition
+        if (requiredLiquidField != null)
+        {
+            var liquidCond = (LiquidContentCondition)requiredLiquidField.GetValue(elem);
+            if (liquidCond.IsActive)
+            {
+                sb.AppendLine($"        LiquidContent: IsActive={liquidCond.IsActive}");
+                if (liquidCond.RequiredLiquid != null)
+                {
+                    sb.AppendLine($"        RequiredLiquid: {liquidCond.RequiredLiquid.name}");
+                }
+                if (liquidCond.RequiredGroup != null)
+                {
+                    sb.AppendLine($"        RequiredGroup: {liquidCond.RequiredGroup.name}");
+                }
+                sb.AppendLine($"        RequiredQuantity: {liquidCond.RequiredQuantity}");
+            }
+        }
     }
 
     private static Dictionary<string, UniqueIDScriptable> GetAllUniqueObjects()
