@@ -1,6 +1,6 @@
 ﻿================================================================================
 Card Dumper - UniqueIDScriptable Objects Dump
-Generated: 2025-12-21 16:07:49
+Generated: 2025-12-25 13:01:25
 Total objects: 2866
 Matching objects: 22
 Keywords: Plane, Crash, WhiteWash, StitchedHide, Floor, Wall, Shelter, House
@@ -120,10 +120,12 @@ Type: CardData
 CardType: Explorable
 CardName.DefaultText: Plane Crash
 CardName.LocalizationKey: PlaneCrash_CardName
-EnvironmentImprovements (3):
+EnvironmentImprovements (5):
   - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
   - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
   - Imp_MudHutExpansion (ID: 50820c24755986647a5fdc1ac29c2195)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
 CardTags: tag_EnvIndoors
 
 ------------------------------------------------------------
@@ -821,10 +823,12 @@ Type: CardData
 CardType: Explorable
 CardName.DefaultText: Plane Crash
 CardName.LocalizationKey: PlaneCrash_CardName
-EnvironmentImprovements (3):
+EnvironmentImprovements (5):
   - Imp_Door (ID: ac4f41052ca83ab43961f21270259714)
   - Imp_HomeSign (ID: 5818fb8dde656774dac9edaa52d5c0a0)
   - Imp_MudHutExpansion (ID: 50820c24755986647a5fdc1ac29c2195)
+  - Imp_WhiteWashedWalls (ID: 359709c0f50d26a4fb50e82e26cdf57c)
+  - Imp_StitchedHideFloor (ID: 2afb6d1f2179a9742b38a4cb30d58e2d)
 CardTags: tag_EnvIndoors
 
 ------------------------------------------------------------
@@ -929,4 +933,691 @@ EnvironmentImprovements (3):
   - Imp_Irrigation (ID: ac19811fba432c54389ed288b92f60a4)
   - Imp_TrappingFences (ID: 2b8c17e66c746894ea9469de4f36f5c9)
 CardTags: tag_SnareCompatible
+
+
+================================================================================
+EXPANSION STAGE ITEMS (도구 및 재료)
+Keywords: Axe, Shovel, MetalScrap, DirtPile, StickLong, Fiber, Cord, Clay, Quicklime, CoconutShell, ClayBowl, PlasticBottle, LQ_Water, LQ_WaterUnsafe
+================================================================================
+
+------------------------------------------------------------
+Name: ClayFirePit
+UniqueID: dbc3750bed287e14cad6825ca9411f67
+Type: CardData
+CardType: Base
+CardName.DefaultText: Clay Fire Pit
+CardName.LocalizationKey: ClayFirePit_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Fire, tag_Heavy
+
+------------------------------------------------------------
+Name: Bp_ClayBowl
+UniqueID: 090cea96fab32934da8fd67ef4e80f65
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Clay Bowl
+CardName.LocalizationKey: Bp_ClayBowl_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_ClayFirePit
+UniqueID: f783b98c0d114b349b14f75754d99ce2
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Clay Fire Pit
+CardName.LocalizationKey: Bp_ClayFirePit_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_ClayJar
+UniqueID: 1f15f3bd82a791e419e8110af9ecf510
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Clay Jar
+CardName.LocalizationKey: Bp_ClayJar_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_ClayPotCooler
+UniqueID: 67922062d74019641b34ea09597f76b7
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Clay Pot Cooler
+CardName.LocalizationKey: Bp_ClayPotCooler_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_ClayVase
+UniqueID: 5b4c32c8bb221c44997350d0674d8aac
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Clay Vase
+CardName.LocalizationKey: Bp_ClayVase_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_CopperAxe
+UniqueID: f18e8a5267bc0dd488213d4ca34eb996
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Copper Axe
+CardName.LocalizationKey: Bp_CopperAxe_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_CopperShovel
+UniqueID: 5a1293f40d7a10047a6c1c774d2c5c6c
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Copper Shovel
+CardName.LocalizationKey: Bp_CopperShovel_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_FiberArmor
+UniqueID: e0c1037701567354195b4b5d22bcc572
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Fiber Armor
+CardName.LocalizationKey: Bp_FiberArmor_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_FiberBracers
+UniqueID: 9ab8d831d93ebe84ca683d07dbf7b802
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Fiber Bracers
+CardName.LocalizationKey: Bp_FiberBracers_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_FiberCuirass
+UniqueID: 72a5995a46be1dc41b377aedfc7d930c
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Fiber Cuirass
+CardName.LocalizationKey: Bp_FiberCuirass_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_FiberHelmet
+UniqueID: 0ea2f026e076ecc44af9b46f74e0282c
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Fiber Helmet
+CardName.LocalizationKey: Bp_FiberHelmet_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_FlintAxe
+UniqueID: 7eb469ad0fd626243893c56604c2e1d6
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Flint Axe
+CardName.LocalizationKey: Bp_FlintAxe_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_MoldAxe
+UniqueID: 86756ac5483d4c247a74c0e9dcbe24b0
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Axe Mold
+CardName.LocalizationKey: Bp_MoldAxe_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_MoldShovel
+UniqueID: f5c6a096daf7f8e4e91df4ff69e7affc
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Shovel Mold
+CardName.LocalizationKey: Bp_MoldShovel_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_ScrapAxe
+UniqueID: d3af2a3785e2ac24e938011b477708e4
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Scrap Axe
+CardName.LocalizationKey: Bp_ScrapAxe_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_ScrapShovel
+UniqueID: 422760b87eaef9c48a1ac6c8702cf628
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Scrap Shovel
+CardName.LocalizationKey: Bp_ScrapShovel_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_StoneAxe
+UniqueID: cdfc5acd5e4febb4db3337c7cd64155b
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Stone Axe
+CardName.LocalizationKey: Bp_StoneAxe_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: Bp_WoodenShovel
+UniqueID: 03ddd3f93d6b153429c3095df16bd8da
+Type: CardData
+CardType: Blueprint
+CardName.DefaultText: Wooden Shovel
+CardName.LocalizationKey: Bp_WoodenShovel_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: AxeCopper
+UniqueID: 968d89b358ccf624a9e34f659166a0a1
+Type: CardData
+CardType: Item
+CardName.DefaultText: Copper Axe
+CardName.LocalizationKey: AxeCopper_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Axe, tag_AxeAdv
+
+------------------------------------------------------------
+Name: AxeFlint
+UniqueID: 5c22db296fcde9a4da7dab850195c04a
+Type: CardData
+CardType: Item
+CardName.DefaultText: Flint Axe
+CardName.LocalizationKey: AxeFlint_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Axe, tag_AxeAdv, tag_Heavy
+
+------------------------------------------------------------
+Name: AxeHead
+UniqueID: 98525fc6e40fab247afecedc7c1b7b26
+Type: CardData
+CardType: Item
+CardName.DefaultText: Axe Head
+CardName.LocalizationKey: AxeHead_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Scraper, tag_Cutter, tag_Hammer, tag_Heavy, tag_CopperBig
+
+------------------------------------------------------------
+Name: AxeHeadBlunt
+UniqueID: b5ece238e55a83b49a6ad8d87b01a217
+Type: CardData
+CardType: Item
+CardName.DefaultText: Blunt Axe Head
+CardName.LocalizationKey: AxeHeadBlunt_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Heavy, tag_CopperBig
+
+------------------------------------------------------------
+Name: AxeScrap
+UniqueID: 9fc3486d28029834fabc24cae6420809
+Type: CardData
+CardType: Item
+CardName.DefaultText: Scrap Axe
+CardName.LocalizationKey: AxeScrap_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Axe, tag_AxeAdv, tag_Heavy
+
+------------------------------------------------------------
+Name: AxeStone
+UniqueID: bd517943b89f4e149893ffe4489a96e6
+Type: CardData
+CardType: Item
+CardName.DefaultText: Stone Axe
+CardName.LocalizationKey: StoneAxe_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Axe, tag_Heavy
+
+------------------------------------------------------------
+Name: AxeSurvival
+UniqueID: 8cf3d3dc5b48c6244a23f825d3528dce
+Type: CardData
+CardType: Item
+CardName.DefaultText: Survival Axe
+CardName.LocalizationKey: AxeSurvival_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Axe, tag_AxeAdv, tag_Heavy
+
+------------------------------------------------------------
+Name: AxeSurvivalBlunt
+UniqueID: 1c28383d0e798b34aa737b54178732e7
+Type: CardData
+CardType: Item
+CardName.DefaultText: Blunt Survival Axe
+CardName.LocalizationKey: AxeSurvivalBlunt_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Heavy
+
+------------------------------------------------------------
+Name: Clay
+UniqueID: 68c14d265ea6c874ba79444d2e1ef7b3
+Type: CardData
+CardType: Item
+CardName.DefaultText: Clay
+CardName.LocalizationKey: Clay_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Heavy
+
+------------------------------------------------------------
+Name: ClayBowl
+UniqueID: a968f3eaffc6b9743b82982b5af2ab8c
+Type: CardData
+CardType: Item
+CardName.DefaultText: Clay Bowl
+CardName.LocalizationKey: ClayBowl_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_Clay, tag_ContainerOpen, tag_ContainerBowl, tag_Spillable, tag_Pretty
+
+------------------------------------------------------------
+Name: ClayBowlUnfired
+UniqueID: aa56e0efe1f1c284aa5210724ff900dd
+Type: CardData
+CardType: Item
+CardName.DefaultText: Unfired Clay Bowl
+CardName.LocalizationKey: ClayBowlUnfired_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Cookable, tag_Clay
+
+------------------------------------------------------------
+Name: ClayFirePitExtinguished
+UniqueID: 24cfb6ec2dd4ead41ad93479948d3984
+Type: CardData
+CardType: Item
+CardName.DefaultText: Clay Fire Pit
+CardName.LocalizationKey: ClayFirePitExtinguished_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Fire, tag_Heavy
+
+------------------------------------------------------------
+Name: ClayFirePitUnfired
+UniqueID: e54ee1612d95f7f44aa7345c998d6014
+Type: CardData
+CardType: Item
+CardName.DefaultText: Unfired Clay Fire Pit
+CardName.LocalizationKey: ClayFirePitUnfired_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Cookable, tag_Large, tag_Clay
+
+------------------------------------------------------------
+Name: ClayJar
+UniqueID: db78f1724c2fffe4d9302c72457ca8bf
+Type: CardData
+CardType: Item
+CardName.DefaultText: Clay Jar
+CardName.LocalizationKey: ClayJar_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_Clay, tag_Cookable, tag_ContainerSealed, tag_Spillable, tag_Pretty
+
+------------------------------------------------------------
+Name: ClayJarJasmine
+UniqueID: 4f522504de160534f913e7a110f7023c
+Type: CardData
+CardType: Item
+CardName.DefaultText: Jasmine Flowers
+CardName.LocalizationKey: ClayJarJasmine_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_Clay, tag_Cookable, tag_ContainerOpen, tag_Decoration
+
+------------------------------------------------------------
+Name: ClayJarUnfired
+UniqueID: aeb2da6ac8e8450468579149e17c86bc
+Type: CardData
+CardType: Item
+CardName.DefaultText: Unfired Clay Jar
+CardName.LocalizationKey: ClayJarUnfired_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Clay
+
+------------------------------------------------------------
+Name: ClayPotCoolerUndeployed
+UniqueID: fc709fc6a0f5d3446b49560805d3a5c8
+Type: CardData
+CardType: Item
+CardName.DefaultText: Clay Pot Cooler
+CardName.LocalizationKey: ClayPotCoolerUndeployed_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Large, tag_Heavy
+
+------------------------------------------------------------
+Name: ClayPotCoolerUnfired
+UniqueID: 6a969f783578de447a97baf1846fa89b
+Type: CardData
+CardType: Item
+CardName.DefaultText: Unfired Clay Pot Cooler
+CardName.LocalizationKey: ClayPotCoolerUnfired_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Clay, tag_Heavy
+
+------------------------------------------------------------
+Name: ClayVase
+UniqueID: 50f16fb2af7ff7d4fb86ab68695a36ea
+Type: CardData
+CardType: Item
+CardName.DefaultText: Clay Vase
+CardName.LocalizationKey: ClayVase_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_Large, tag_Clay, tag_Spillable, tag_ContainerOpen, tag_Heavy
+
+------------------------------------------------------------
+Name: ClayVaseUnfinished
+UniqueID: bbf0503e73ac56143bde27d104d1c669
+Type: CardData
+CardType: Item
+CardName.DefaultText: Unfinished Clay Vase
+CardName.LocalizationKey: ClayVaseUnfinished_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Cookable, tag_Clay
+
+------------------------------------------------------------
+Name: ClayVaseUnfired
+UniqueID: a1979524bd8a96f4593ec540b14fb51f
+Type: CardData
+CardType: Item
+CardName.DefaultText: Unfired Clay Vase
+CardName.LocalizationKey: ClayVaseUnfired_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Cookable, tag_Large, tag_Clay, tag_Spillable, tag_Heavy
+
+------------------------------------------------------------
+Name: CoconutShell
+UniqueID: 80b480a28a4fbd544b78b5807fd999e4
+Type: CardData
+CardType: Item
+CardName.DefaultText: Coconut Shell
+CardName.LocalizationKey: CoconutShell_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_ContainerOpen, tag_ContainerBowl, tag_Spillable
+
+------------------------------------------------------------
+Name: CordFiber
+UniqueID: f6e8281ffa0e6eb4b8bf1dc5e5ae1338
+Type: CardData
+CardType: Item
+CardName.DefaultText: Fiber Cord
+CardName.LocalizationKey: CordFiber_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Cord
+
+------------------------------------------------------------
+Name: DirtPile
+UniqueID: 6d47888db6018d04ea562476cde60440
+Type: CardData
+CardType: Item
+CardName.DefaultText: Dirt Pile
+CardName.LocalizationKey: DirtPile_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_Heavy
+
+------------------------------------------------------------
+Name: FiberArmor
+UniqueID: c844543d0c42be047928d69ffa0ccd81
+Type: CardData
+CardType: Item
+CardName.DefaultText: Fiber Armor
+CardName.LocalizationKey: FiberArmor_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_OuterTorso, tag_Clothing
+
+------------------------------------------------------------
+Name: FiberBracers
+UniqueID: b565bfe3d6255f944ba0d9f2232b2bd6
+Type: CardData
+CardType: Item
+CardName.DefaultText: Fiber Bracers
+CardName.LocalizationKey: FiberBracers_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Bracers, tag_Clothing
+
+------------------------------------------------------------
+Name: FiberCuirass
+UniqueID: 1679a7c8dae496742af3cb4b7af5ea4b
+Type: CardData
+CardType: Item
+CardName.DefaultText: Fiber Cuirass
+CardName.LocalizationKey: FiberCuirass_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_InnerTorso, tag_OuterTorso, tag_Clothing
+
+------------------------------------------------------------
+Name: FiberHelmet
+UniqueID: b9d85dba90047424cb69698901fc660f
+Type: CardData
+CardType: Item
+CardName.DefaultText: Fiber Helmet
+CardName.LocalizationKey: FiberHelmet_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_OuterHead, tag_InnerHead, tag_Clothing
+
+------------------------------------------------------------
+Name: Fibers
+UniqueID: b8885e78517570b4293c573871625e11
+Type: CardData
+CardType: Item
+CardName.DefaultText: Fibers
+CardName.LocalizationKey: Fibers_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Temper, tag_Tinder, tag_FibersPoor
+
+------------------------------------------------------------
+Name: MetalScrap
+UniqueID: 035841b923343024eafcbeece1775c4a
+Type: CardData
+CardType: Item
+CardName.DefaultText: Metal Scrap
+CardName.LocalizationKey: MetalScrap_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Pretty, tag_Heavy
+
+------------------------------------------------------------
+Name: MoldAxe
+UniqueID: 91b144aae122fb24da7bedce4085e18f
+Type: CardData
+CardType: Item
+CardName.DefaultText: Axe Mold
+CardName.LocalizationKey: MoldAxe_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Clay, tag_Heavy
+
+------------------------------------------------------------
+Name: MoldShovel
+UniqueID: ed7a4b11bc98fb6489d11bdaa9156aeb
+Type: CardData
+CardType: Item
+CardName.DefaultText: Shovel Mold
+CardName.LocalizationKey: MoldShovel_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Clay, tag_Heavy
+
+------------------------------------------------------------
+Name: PlasticBottle
+UniqueID: 66f68506e7f59d74e9502cbdd3eeec40
+Type: CardData
+CardType: Item
+CardName.DefaultText: Plastic Bottle
+CardName.LocalizationKey: PlasticBottle_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_ContainerSealed
+
+------------------------------------------------------------
+Name: PlasticBottleFull
+UniqueID: 2e48255bf8840f3488c01cd7ca80ba4d
+Type: CardData
+CardType: Item
+CardName.DefaultText: Plastic Bottle
+CardName.LocalizationKey: PlasticBottleFull_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_ContainerSealed
+
+------------------------------------------------------------
+Name: PlasticBottleJasmine
+UniqueID: ce0cdff72fffb3847b5608c0e5f31d8d
+Type: CardData
+CardType: Item
+CardName.DefaultText: Jasmine Flowers
+CardName.LocalizationKey: PlasticBottleJasmine_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterContainer, tag_ContainerOpen, tag_Decoration
+
+------------------------------------------------------------
+Name: Quicklime
+UniqueID: f21870cdd29e5a048b6cc7a2d08d5e71
+Type: CardData
+CardType: Item
+CardName.DefaultText: Quicklime
+CardName.LocalizationKey: Quicklime_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Temper
+
+------------------------------------------------------------
+Name: ShovelCopper
+UniqueID: 3587432ac7e29784991ff2cccf92891d
+Type: CardData
+CardType: Item
+CardName.DefaultText: Copper Shovel
+CardName.LocalizationKey: ShovelCopper_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Shovel, tag_Heavy
+
+------------------------------------------------------------
+Name: ShovelHead
+UniqueID: 6df31a8935844da418c6a39a281ce974
+Type: CardData
+CardType: Item
+CardName.DefaultText: Shovel Head
+CardName.LocalizationKey: ShovelHead_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Scraper, tag_Hammer, tag_Heavy, tag_CopperBig
+
+------------------------------------------------------------
+Name: ShovelScrap
+UniqueID: ed61904e423eab447a3bb42d0b3eea00
+Type: CardData
+CardType: Item
+CardName.DefaultText: Scrap Shovel
+CardName.LocalizationKey: ShovelScrap_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Shovel, tag_Heavy
+
+------------------------------------------------------------
+Name: ShovelWooden
+UniqueID: 2466c0bf349c4f84db55a4ee8ad67300
+Type: CardData
+CardType: Item
+CardName.DefaultText: Wooden Shovel
+CardName.LocalizationKey: ShovelWooden_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Hammer, tag_Shovel, tag_Heavy
+
+------------------------------------------------------------
+Name: SpindleFiber
+UniqueID: 9eef12c33a9c70845a432dd6c2c77a8f
+Type: CardData
+CardType: Item
+CardName.DefaultText: Spindled Cord
+CardName.LocalizationKey: SpindleFiber_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Cord
+
+------------------------------------------------------------
+Name: StickLong
+UniqueID: 3db4c94184af274409f0d3eb16870f64
+Type: CardData
+CardType: Item
+CardName.DefaultText: Long Stick
+CardName.LocalizationKey: StickLong_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Large
+
+------------------------------------------------------------
+Name: YarnFiber
+UniqueID: 7adecfbfd3ccd8c4aa34cd61d8c98076
+Type: CardData
+CardType: Item
+CardName.DefaultText: Yarn
+CardName.LocalizationKey: YarnFiber_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Cord
+
+------------------------------------------------------------
+Name: LQ_Water
+UniqueID: 425259cb06b869d45be2e7f1b5b54aff
+Type: CardData
+CardType: Liquid
+CardName.DefaultText: Water
+CardName.LocalizationKey: LQ_Water_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterFresh, tag_CleanerWeak, tag_WaterAny
+
+------------------------------------------------------------
+Name: LQ_WaterBoiling
+UniqueID: 782eb58b5bfd5d94dad5798de67584ed
+Type: CardData
+CardType: Liquid
+CardName.DefaultText: Boiling Water
+CardName.LocalizationKey: LQ_WaterBoiling_CardName
+EnvironmentImprovements: (none)
+
+------------------------------------------------------------
+Name: LQ_WaterRice
+UniqueID: b941606d1bfac2d4286ce5f8f70525dc
+Type: CardData
+CardType: Liquid
+CardName.DefaultText: Rice Water
+CardName.LocalizationKey: LQ_WaterRice_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterFresh, tag_WaterAny
+
+------------------------------------------------------------
+Name: LQ_WaterSalt
+UniqueID: 9a74ca45c5a14744da6fbaf2fdb92722
+Type: CardData
+CardType: Liquid
+CardName.DefaultText: Salt Water
+CardName.LocalizationKey: LQ_WaterSalt_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterAny
+
+------------------------------------------------------------
+Name: LQ_WaterToxic
+UniqueID: ede95df8e3a2b38408760d6bf7021d72
+Type: CardData
+CardType: Liquid
+CardName.DefaultText: Toxic Water
+CardName.LocalizationKey: LQ_WaterToxic_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterFresh, tag_CleanerWeak, tag_WaterAny
+
+------------------------------------------------------------
+Name: LQ_WaterUnsafe
+UniqueID: aa33d3104cc682c4e9a163e7df9a7e13
+Type: CardData
+CardType: Liquid
+CardName.DefaultText: Unsafe Water
+CardName.LocalizationKey: LQ_WaterUnsafe_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_WaterFresh, tag_CleanerWeak, tag_WaterAny
+
+------------------------------------------------------------
+Name: ClayPotCoolerOff
+UniqueID: bb241b7b828e3544696297d0ef7c012e
+Type: CardData
+CardType: Location
+CardName.DefaultText: Clay Pot Cooler
+CardName.LocalizationKey: ClayPotCoolerOff_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Large, tag_Heavy
+
+------------------------------------------------------------
+Name: ClayPotCoolerOn
+UniqueID: a2db9701acc7a4b449a73e713e23600a
+Type: CardData
+CardType: Location
+CardName.DefaultText: Clay Pot Cooler
+CardName.LocalizationKey: ClayPotCoolerOn_CardName
+EnvironmentImprovements: (none)
+CardTags: tag_Heavy
 

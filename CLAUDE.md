@@ -483,11 +483,90 @@ new BlueprintElement {
 }
 ```
 
-### 기타 액체 타입 참고
+### 용기 카드 (Containers)
 
-| 카드명 | 한글명 | 용도 |
-| ------ | ------ | ---- |
-| LQ_WaterBoiling | 끓는 물 | 요리용 |
-| LQ_WaterSalt | 소금물 | 마시기 부적합 |
-| LQ_WaterToxic | 유독성 물 | 마시기 부적합 |
-| LQ_WaterRice | 쌀뜨물 | 마실 수 있음 |
+Stage 9에서 물을 담을 수 있는 용기:
+
+| 카드명 | UniqueID | 한글명 | 주요 태그 |
+| ------ | -------- | ------ | --------- |
+| CoconutShell | `80b480a28a4fbd544b78b5807fd999e4` | 코코넛 껍데기 | tag_WaterContainer, tag_ContainerOpen, tag_ContainerBowl |
+| ClayBowl | `a968f3eaffc6b9743b82982b5af2ab8c` | 점토 그릇 | tag_WaterContainer, tag_ContainerOpen, tag_ContainerBowl |
+| PlasticBottle | `66f68506e7f59d74e9502cbdd3eeec40` | 플라스틱 병 | tag_WaterContainer, tag_ContainerSealed |
+
+**참고:** `PlasticBottleFull` (ID: `2e48255bf8840f3488c01cd7ca80ba4d`)은 게임 시작 시 물이 담긴 플라스틱 병.
+
+### 액체 카드 (Liquids)
+
+| 카드명 | UniqueID | 한글명 | Stage 9 허용 | 주요 태그 |
+| ------ | -------- | ------ | ------------ | --------- |
+| LQ_Water | `425259cb06b869d45be2e7f1b5b54aff` | 물 | ✓ | tag_WaterFresh, tag_WaterAny |
+| LQ_WaterUnsafe | `aa33d3104cc682c4e9a163e7df9a7e13` | 안전하지 않은 물 | ✓ | tag_WaterFresh, tag_WaterAny |
+| LQ_WaterBoiling | `782eb58b5bfd5d94dad5798de67584ed` | 끓는 물 | ✗ | - |
+| LQ_WaterSalt | `9a74ca45c5a14744da6fbaf2fdb92722` | 소금물 | ✗ | tag_WaterAny |
+| LQ_WaterToxic | `ede95df8e3a2b38408760d6bf7021d72` | 유독성 물 | ✗ | tag_WaterFresh, tag_WaterAny |
+| LQ_WaterRice | `b941606d1bfac2d4286ce5f8f70525dc` | 쌀뜨물 | ✗ | tag_WaterFresh, tag_WaterAny |
+
+### 용기 태그 시스템
+
+| 태그 | 설명 |
+| ---- | ---- |
+| tag_WaterContainer | 물을 담을 수 있는 용기 |
+| tag_ContainerOpen | 열린 용기 (빗물 수집 가능, 넘침 가능) |
+| tag_ContainerSealed | 밀봉 용기 (빗물 수집 불가, 넘침 없음) |
+| tag_ContainerBowl | 그릇형 용기 |
+| tag_Spillable | 넘침 가능 |
+
+---
+
+## 확장 단계별 필요 아이템 UUID
+
+### 도끼 (Stage 1용)
+
+| 아이템 | 카드명 | UniqueID | 태그 |
+| ------ | ------ | -------- | ---- |
+| 돌 도끼 | AxeStone | `bd517943b89f4e149893ffe4489a96e6` | tag_Axe |
+| 부싯돌 도끼 | AxeFlint | `5c22db296fcde9a4da7dab850195c04a` | tag_Axe, tag_AxeAdv |
+| 구리 도끼 | AxeCopper | `968d89b358ccf624a9e34f659166a0a1` | tag_Axe, tag_AxeAdv |
+| 고철 도끼 | AxeScrap | `9fc3486d28029834fabc24cae6420809` | tag_Axe, tag_AxeAdv |
+| 서바이벌 도끼 | AxeSurvival | `8cf3d3dc5b48c6244a23f825d3528dce` | tag_Axe, tag_AxeAdv |
+
+**Stage 1 부산물:**
+
+| 아이템 | 카드명 | UniqueID |
+| ------ | ------ | -------- |
+| 고철 조각 | MetalScrap | `035841b923343024eafcbeece1775c4a` |
+
+### 삽 (Stage 2-5용)
+
+| 아이템 | 카드명 | UniqueID | 태그 |
+| ------ | ------ | -------- | ---- |
+| 나무 삽 | ShovelWooden | `2466c0bf349c4f84db55a4ee8ad67300` | tag_Shovel |
+| 구리 삽 | ShovelCopper | `3587432ac7e29784991ff2cccf92891d` | tag_Shovel |
+| 고철 삽 | ShovelScrap | `ed61904e423eab447a3bb42d0b3eea00` | tag_Shovel |
+
+**Stage 2-5 부산물:**
+
+| 아이템 | 카드명 | UniqueID |
+| ------ | ------ | -------- |
+| 마른 흙 | DirtPile | `6d47888db6018d04ea562476cde60440` |
+
+### 구조재 (Stage 6-7용)
+
+| 아이템 | 카드명 | UniqueID |
+| ------ | ------ | -------- |
+| 긴 막대기 | StickLong | `3db4c94184af274409f0d3eb16870f64` |
+| 섬유 끈 | CordFiber | `f6e8281ffa0e6eb4b8bf1dc5e5ae1338` |
+
+### 밀봉재 (Stage 8용)
+
+| 아이템 | 카드명 | UniqueID |
+| ------ | ------ | -------- |
+| 점토 | Clay | `68c14d265ea6c874ba79444d2e1ef7b3` |
+| 섬유 | Fibers | `b8885e78517570b4293c573871625e11` |
+
+### 마감재 (Stage 9용)
+
+| 아이템 | 카드명 | UniqueID |
+| ------ | ------ | -------- |
+| 생석회 | Quicklime | `f21870cdd29e5a048b6cc7a2d08d5e71` |
+| 물 담긴 용기 | (위 용기 + 액체 참조) | - |
