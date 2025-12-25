@@ -520,15 +520,19 @@ Stage 9에서 물을 담을 수 있는 용기:
 
 ## 확장 단계별 필요 아이템 UUID
 
-### 도끼 (Stage 1용)
+### 날카로운 도끼 (Stage 1용)
 
-| 아이템 | 카드명 | UniqueID | 태그 |
-| ------ | ------ | -------- | ---- |
-| 돌 도끼 | AxeStone | `bd517943b89f4e149893ffe4489a96e6` | tag_Axe |
-| 부싯돌 도끼 | AxeFlint | `5c22db296fcde9a4da7dab850195c04a` | tag_Axe, tag_AxeAdv |
-| 구리 도끼 | AxeCopper | `968d89b358ccf624a9e34f659166a0a1` | tag_Axe, tag_AxeAdv |
-| 고철 도끼 | AxeScrap | `9fc3486d28029834fabc24cae6420809` | tag_Axe, tag_AxeAdv |
-| 서바이벌 도끼 | AxeSurvival | `8cf3d3dc5b48c6244a23f825d3528dce` | tag_Axe, tag_AxeAdv |
+Stage 1은 **날카로운 도끼** (`tag_AxeAdv`)를 요구합니다. 돌 도끼는 사용 불가.
+
+| 아이템 | 카드명 | UniqueID | tag_AxeAdv |
+| ------ | ------ | -------- | ---------- |
+| 돌 도끼 | AxeStone | `bd517943b89f4e149893ffe4489a96e6` | ✗ (사용 불가) |
+| 부싯돌 도끼 | AxeFlint | `5c22db296fcde9a4da7dab850195c04a` | ✓ |
+| 구리 도끼 | AxeCopper | `968d89b358ccf624a9e34f659166a0a1` | ✓ |
+| 고철 도끼 | AxeScrap | `9fc3486d28029834fabc24cae6420809` | ✓ |
+| 서바이벌 도끼 | AxeSurvival | `8cf3d3dc5b48c6244a23f825d3528dce` | ✓ |
+
+**구현 시:** `tag_AxeAdv` 태그 기반 CardTabGroup 사용
 
 **Stage 1 부산물:**
 
